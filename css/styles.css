@@ -1,0 +1,126 @@
+/* Default elements */
+body {
+    background-color: #F8F7F4;
+}
+
+header {
+    display: flex;
+    padding: 28px 133px 28px 110px;
+}
+
+select {
+    /* Hide default arrow */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+tr:nth-child(even) {
+    background-color: #F3EBE5;
+}
+
+/* Fonts */
+h1 {
+    font-family: "Francois One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.33vw;
+    color: #262626;
+}
+@media screen and (min-width: 1440px) {
+    h1 {
+        font-size: 48px;
+    }
+}
+@media screen and (max-width: 900px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
+.dm-sans-regular {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.barlow-condensed-semibold {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Header section classes */
+.menu-icon {
+    width: 23px;
+    height: 16px;
+    margin-top: 42px;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.paris-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.vertical-line {
+    margin: 0 40px 0 20px;
+    height: 63px;
+    width: 2px;
+    background-color: #F3EBE5;
+    border-radius: 2px;
+}
+
+.country-select {
+    background-color: transparent;
+    padding-left: 10px;
+    color: #262626;
+    font-size: 12px;
+    width: 166px;
+    height: 35px;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: #F3EBE5;
+    box-shadow: none;
+    outline: none;
+}
+
+/* Main content section classes */
+.top-section {
+    text-align: center;
+    padding: 2vw 10vw;
+}
+
+.sub-heading {
+    font-size: 18px;
+    color: #262626;
+}
+
+.teams-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20vh;
+    padding: 0 10vw;
+}
+
+#teams {
+    width: 100%;
+}
