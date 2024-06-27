@@ -19,23 +19,189 @@
     </head>
     <body>
         <header>
+            <!--
             <a href="#open-menu">
                 <img src="images/menu-icon.png" class="menu-icon">
             </a>
-            <div class="top-bar">
+            
                 <a href="index.html">
                     <img src="images/paris-2024-logo.png" class="paris-logo">
                 </a>
                 <div class="vertical-line"></div>
+            
+            <div class="top-bar">
                 <select name="countries" class="country-select dm-sans-regular">
                     <option value="united-states">🇺🇸&nbsp; United States</option>
                 </select>
             </div>
+            -->
         </header>
-        <div class="top-section">
-            <h1>Team USA 2024 Olympic Roster</h1>
-            <div class="dm-sans-regular sub-heading">Meet the athletes competing for the United States in the 2024 Paris Olympics (July 26 to August 11, 2024). See information about teams, athletes, dates, and more.</div>
+        <div id="top-section">
+            <div>
+                <img src="images/usa-flag.webp" class="top-flag">
+            </div>
+            <div id="all-teams-content">
+                <h1>Team USA 2024 Olympic Roster</h1>
+                <div class="dm-sans-regular sub-heading">Meet the athletes competing for the United States in the 2024 Paris Olympics (July 26 to August 11, 2024). See information about teams, athletes, dates, and more.</div>
+            </div>
+            <div id="sports-content">
+                <h2 class="barlow-teams">ARTISTIC SWIMMING</h2>
+                <div class="dm-sans-regular sub-heading description">Either as a duet or team of eight, swimmers perform a free and technical routine where they are judged on execution and synchronisation, as well as the degree of difficulty, use of music, and choreography.
+                    <div class="sports-details dm-sans-regular">
+                        <div class="dates">
+                            <img src="images/calendar-icon.png" class="icon">
+                            August 5-7, 9-10
+                        </div>
+                        <div class="dates">
+                            <img src="images/person-icon.png" class="icon">
+                            Male: 0
+                        </div>
+                        <div class="dates">
+                            <img src="images/person-icon.png" class="icon">
+                            Female: 8
+                        </div>
+                        <div class="location">
+                            <img src="images/location-icon.png" class="icon">
+                            <span class="tooltip-trigger">Paris Aquatic Centre</span>
+                            <div class="tooltip">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/olympics-c5b48.appspot.com/o/usa%2Fsports%2FParis_Aquatic_Centre.png?alt=media&token=7cacd9d6-e484-4147-90a9-34ef17544d12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <select name="teams" id="team-select" class="dm-sans-regular">
+                <option value="all-teams">All teams</option>
+                <option value="archery">Archery</option>
+                <option value="artistic-gymnastics">Artistic Gymnastics</option>
+                <option value="artistic-swimming">Artistic Swimming</option>
+                <option value="athletics">Athletics</option>
+                <option value="badminton">Badminton</option>
+                <option value="basketball">Basketball</option>
+                <option value="basketball-3x3">Basketball 3x3</option>
+                <option value="beach-volleyball">Beach Volleyball</option>
+                <option value="boxing">Boxing</option>
+                <option value="breaking">Breaking</option>
+                <option value="canoe-slalom">Canoe Slalom</option>
+                <option value="canoe-sprint">Canoe Sprint</option>
+                <option value="cycling-bmx-freestyle">Cycling BMX Freestyle</option>
+                <option value="cycling-bmx-racing">Cycling BMX Racing</option>
+                <option value="cycling-mountain-bike">Cycling Mountain Bike</option>
+                <option value="cycling-road">Cycling Road</option>
+                <option value="cycling-track">Cycling Track</option>
+                <option value="diving">Diving</option>
+                <option value="equestrian">Equestrian</option>
+                <option value="fencing">Fencing</option>
+                <option value="football">Football</option>
+                <option value="golf">Golf</option>
+                <option value="handball">Handball</option>
+                <option value="hockey">Hockey</option>
+                <option value="judo">Judo</option>
+                <option value="marathon-swimming">Marathon Swimming</option>
+                <option value="modern-pentathlon">Modern Pentathlon</option>
+                <option value="rhythmic-gymnastics">Rhythmic Gymnastics</option>
+                <option value="rowing">Rowing</option>
+                <option value="rugby-sevens">Rugby Sevens</option>
+                <option value="sailing">Sailing</option>
+                <option value="shooting">Shooting</option>
+                <option value="skateboarding">Skateboarding</option>
+                <option value="sport-climbing">Sport Climbing</option>
+                <option value="surfing">Surfing</option>
+                <option value="swimming">Swimming</option>
+                <option value="table-tennis">Table Tennis</option>
+                <option value="taekwondo">Taekwondo</option>
+                <option value="tennis">Tennis</option>
+                <option value="trampoline">Trampoline</option>
+                <option value="triathlon">Triathlon</option>
+                <option value="volleyball">Volleyball</option>
+                <option value="water-polo">Water Polo</option>
+                <option value="weightlifting">Weightlifting</option>
+                <option value="wrestling">Wrestling</option>
+            </select>
         </div>
+        <!-- 
+        <div class="images-section">
+            <div class="image-container">
+                <img src="images/archery.jpg" class="teams-image">
+                <div class="barlow-teams">ARCHERY</div>
+            </div>
+            <img src="images/archery.jpg" class="teams-image">
+        </div>
+        -->
+        <div class="athletes-section">
+            <div class="athlete-wrapper" data-name="Casey Kaufhold" data-info="Casey Kaufhold, born in 2004, is an American archer known for her precision and skills. Standing 5'7&quot; and weighing 135 lbs, she has quickly risen in the ranks of the archery world. Casey has competed in numerous national and international events, earning a reputation as a formidable competitor. Off the field, she is dedicated to her studies and enjoys outdoor activities.">
+                <div class="card-gradient"></div>
+                <img src="images/profiles/casey-kaufhold.png" class="athlete-card">
+                <div class="dm-sans-names">Casey Kaufhold</div>
+                <div class="dm-sans-info">Archery • 23 • PA</div>
+            </div>
+            <div class="athlete-wrapper" data-info="Information for Card 2">
+                <div class="card-gradient"></div>
+                <img src="images/athlete-image-test.png" class="athlete-card">
+                <div class="dm-sans-names">Eli Dershwitz</div>
+                <div class="dm-sans-info">Fencing • 19 • NY</div>
+            </div>     
+            <div class="athlete-wrapper">
+                <div class="card-gradient"></div>
+                <img src="images/profiles/casey-kaufhold.png" class="athlete-card">
+                <div class="dm-sans-names">Casey Kaufhold</div>
+                <div class="dm-sans-info">Archery • 23 • PA</div>
+            </div>
+            <div class="athlete-wrapper">
+                <div class="card-gradient"></div>
+                <img src="images/athlete-image-test.png" class="athlete-card">
+                <div class="dm-sans-names">Eli Dershwitz</div>
+                <div class="dm-sans-info">Fencing • 19 • NY</div>
+            </div>
+            <div class="athlete-wrapper">
+                <div class="card-gradient"></div>
+                <img src="images/profiles/casey-kaufhold.png" class="athlete-card">
+                <div class="dm-sans-names">Casey Kaufhold</div>
+                <div class="dm-sans-info">Archery • 23 • PA</div>
+            </div>
+            <div class="athlete-wrapper">
+                <div class="card-gradient"></div>
+                <img src="images/athlete-image-test.png" class="athlete-card">
+                <div class="dm-sans-names">Eli Dershwitz</div>
+                <div class="dm-sans-info">Fencing • 19 • NY</div>
+            </div>
+        </div>
+        <!-- Popup
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            </div>
+        </div>-->
+    
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close">&times;</span>
+                <img src="images/profiles/casey-kaufhold.png" class="popup-profile">
+                <img src="images/profiles/casey-kaufhold-header.png" class="popup-banner">
+                <h3 class="popup-name" id="popup-name"></h3>
+                <p class="popup-subtitle dm-sans-regular">Archery • 23 • Lancaster, Pennsylvania</p>
+                <div class="medals-container">
+                    <div class="medal gold dm-sans-regular">0</div>
+                    <div class="medal silver dm-sans-regular">0</div>
+                    <div class="medal bronze dm-sans-regular">0</div>
+                </div>
+                <p class="popup-prev-olympics dm-sans-regular">Previous Olympics: 0</p>
+                <div class="popup-body">
+                    <div class="popup-description">
+                        <p id="popup-text" class="dm-sans-regular"></p>
+                    </div>
+                    <div style="padding-top: 40px">
+                        <iframe src="https://www.youtube.com/embed/rNtjBmemUK0?si=mW1CwJ35eGE_5oA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <a href="https://www.instagram.com/crazy.casey.04/?hl=en" target="_blank">
+                        <img class="instagram-logo" src="images/instagram-logo.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--
         <div class="teams-section">
             <table id="teams">
                 <tr>
@@ -96,5 +262,90 @@
                 </tr>
             </table>
         </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Teams</th>
+                        <th>Men's</th>
+                        <th>Women's</th>
+                        <th>Location</th>
+                        <th>Dates</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Aquatics</td>
+                        <td>356</td>
+                        <td>356</td>
+                        <td>Paris La Défense Arena</td>
+                        <td>26 July - 11 August</td>
+                    </tr>
+                    <tr>
+                        <td>Archery</td>
+                        <td>32</td>
+                        <td>32</td>
+                        <td>Esplanade des Invalides</td>
+                        <td>26 July - 4 August</td>
+                    </tr>
+                    <tr>
+                        <td>Athletics</td>
+                        <td>495</td>
+                        <td>495</td>
+                        <td>Stade de France</td>
+                        <td>26 July - 11 August</td>
+                    </tr>
+                    <tr>
+                        <td>Badminton</td>
+                        <td>43</td>
+                        <td>43</td>
+                        <td>Porte de la Chapelle Arena</td>
+                        <td>27 July - 5 August</td>
+                    </tr>
+                    <tr>
+                        <td>Basketball</td>
+                        <td>72</td>
+                        <td>72</td>
+                        <td>Bercy Arena</td>
+                        <td>27 July - 11 August</td>
+                    </tr>
+                    <tr>
+                        <td>Boxing</td>
+                        <td>62</td>
+                        <td>62</td>
+                        <td>Roland Garros</td>
+                        <td>27 July - 10 August</td>
+                    </tr>
+                    <tr>
+                        <td>Canoe Slalom</td>
+                        <td>20</td>
+                        <td>20</td>
+                        <td>Vaires-sur-Marne Nautical Stadium</td>
+                        <td>27 July - 5 August</td>
+                    </tr>
+                    <tr>
+                        <td>Canoe Sprint</td>
+                        <td>43</td>
+                        <td>43</td>
+                        <td>Vaires-sur-Marne Nautical Stadium</td>
+                        <td>6 August - 10 August</td>
+                    </tr>
+                    <tr>
+                        <td>Cycling - BMX</td>
+                        <td>24</td>
+                        <td>24</td>
+                        <td>Saint-Quentin-en-Yvelines</td>
+                        <td>31 July - 1 August</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="gradient"></div>
+        </div>
+        <button id="showMore">Show More</button>
+        -->
+        <footer>
+            <div class="footer-section dm-sans-regular">© 2024 Official Olympics Rosters. All rights reserved.</div>
+        </footer>
+        <script src="scripts.js"></script>
     </body>
 </html>
